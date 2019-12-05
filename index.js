@@ -76,13 +76,19 @@ function getName(obj){
  *         and returns the result of adding them together.
  *     It has a `speak` method that takes no arguments
  *         and returns a string like `Hello, my name is {name}`.
- *         where `{name}` is the name passed into `makeSmartPerson`.
-*/
-
-function makeSmartPerson() {
-  
+ *         where `{name}` is the name passed into 'makeSmartPerson.
+*/    function makeSmartPerson(name){
+        return SmartPerson={
+          name: name,
+          sum: function(a,b){
+            return a+b;
+          },
+          speak: function(){
+            return `Hello, my name is ${name}`;
+          }
+        };
+        
 }
-
 
 
 /*
@@ -140,7 +146,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+   
 }
 
 /**
